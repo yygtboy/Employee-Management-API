@@ -22,6 +22,5 @@ namespace API.Controllers
             DBLink.mySqlClose();
             return x;
         }
-        //GET
     }
 }
