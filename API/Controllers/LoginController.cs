@@ -26,5 +26,6 @@ namespace API.Controllers
             con.Close();
             return x;
         }
+        //GET
     }
 }
