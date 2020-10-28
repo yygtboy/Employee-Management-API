@@ -31,10 +31,5 @@ namespace API.Controllers
                 return 0;
             }
         }
-        [HttpPost]
-        public string Post([FromBody] string value)
-        {
-            return value;
-        }
     }
 }
