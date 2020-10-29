@@ -16,6 +16,7 @@ namespace API.Controllers
         [HttpGet]
         public ActionResult<int> Get(string user, string pwd)
         {
+            string selectId = $"select count(*) from tb_users where phone ={user}";
             string sql = $"INSERT INTO tb_users (phone,pwd) VALUES ({user},{pwd})";
             MySqlCommand mySql = DBLink.mySqlLink(sql);
             DBLink.mySqlOpen();
