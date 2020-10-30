@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\大三上\\综合实训\\综合实训项目\\API\\API\\API\\API.csproj": {}
+    "D:\\GitHub储存桶\\Employee-Management-API\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\大三上\\综合实训\\综合实训项目\\API\\API\\API\\API.csproj": {
+    "D:\\GitHub储存桶\\Employee-Management-API\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\大三上\\综合实训\\综合实训项目\\API\\API\\API\\API.csproj",
+        "projectUniqueName": "D:\\GitHub储存桶\\Employee-Management-API\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\大三上\\综合实训\\综合实训项目\\API\\API\\API\\API.csproj",
+        "projectPath": "D:\\GitHub储存桶\\Employee-Management-API\\API\\API.csproj",
         "packagesPath": "C:\\Users\\AS\\.nuget\\packages\\",
-        "outputPath": "D:\\大三上\\综合实训\\综合实训项目\\API\\API\\API\\obj\\publish\\linux-x64\\",
+        "outputPath": "D:\\GitHub储存桶\\Employee-Management-API\\API\\obj\\publish\\linux-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,6 +43,10 @@
         "netcoreapp3.1": {
           "dependencies": {
             "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.15, )"
             }

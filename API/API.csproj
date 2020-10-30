@@ -6,10 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="linq2db" Version="3.1.5" />
     <PackageReference Include="MySql.Data" Version="8.0.15" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.15" />
   </ItemGroup>

@@ -74,11 +74,12 @@ D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\staticweb
 D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\API.dll
 D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\API.pdb
 D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache
-D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
-D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cache
 D:\GitHub储存桶\Employee-Management-API\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\GitHub储存桶\Employee-Management-API\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\GitHub储存桶\Employee-Management-API\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
 D:\GitHub储存桶\Employee-Management-API\API\bin\Debug\netcoreapp3.1\MySql.Data.EntityFrameworkCore.dll
 D:\GitHub储存桶\Employee-Management-API\API\bin\Debug\netcoreapp3.1\Remotion.Linq.dll
 D:\GitHub储存桶\Employee-Management-API\API\bin\Debug\netcoreapp3.1\System.Interactive.Async.dll
+D:\GitHub储存桶\Employee-Management-API\API\bin\Debug\netcoreapp3.1\linq2db.dll
+D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\API.csproj.CoreCompileInputs.cache
+D:\GitHub储存桶\Employee-Management-API\API\obj\Debug\netcoreapp3.1\API.MvcApplicationPartsAssemblyInfo.cache

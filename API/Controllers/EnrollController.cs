@@ -22,19 +22,22 @@ namespace API.Controllers
             DBLink.mySqlOpen();
             try
             {
+                //判断用户是否注册过
                 int x = int.Parse(mySql.ExecuteNonQuery().ToString());
                 if (x == 0)
                 {
+                    //添加用户
                     mySql.CommandText = sql;
                     x = int.Parse(mySql.ExecuteNonQuery().ToString());
+                    DBLink.mySqlClose();
                     return x;//注册成功
                 }
                 else
                 {
+                    DBLink.mySqlClose();
                     return 201;//用户已经注册过
+
                 }
-                DBLink.mySqlClose();
-                return x;
             }
             catch
             {

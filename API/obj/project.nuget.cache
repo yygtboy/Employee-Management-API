@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JGEjrMpXUS7t5NeFbHZdflO1AX2sFc5TmDg3/0o6hj2j88+Ol8kh7b2pKYsmStLesZTbk3JRvXC9mFRM8nzbWA==",
+  "dgSpecHash": "Z9E9q5g9LkN/VT2dCqn2RR5i2ThuNyLkCEsGYeJsoQ/Ah+ZoDA/aF17vEwnbEkM6cWupwnirt5WfcfE+QkO9WA==",
   "success": true,
   "projectFilePath": "D:\\GitHub储存桶\\Employee-Management-API\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AS\\.nuget\\packages\\google.protobuf\\3.5.1\\google.protobuf.3.5.1.nupkg.sha512",
+    "C:\\Users\\AS\\.nuget\\packages\\linq2db\\3.1.5\\linq2db.3.1.5.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\microsoft.entityframeworkcore\\2.1.2\\microsoft.entityframeworkcore.2.1.2.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.1.2\\microsoft.entityframeworkcore.abstractions.2.1.2.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.1.2\\microsoft.entityframeworkcore.analyzers.2.1.2.nupkg.sha512",
@@ -48,7 +49,7 @@
     "C:\\Users\\AS\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
-    "C:\\Users\\AS\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "C:\\Users\\AS\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\AS\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",

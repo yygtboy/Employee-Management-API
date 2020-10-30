@@ -49,6 +49,10 @@
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.15, )"
+            },
+            "linq2db": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [
