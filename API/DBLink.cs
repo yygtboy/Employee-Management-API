@@ -9,7 +9,7 @@ namespace API
 {
     public static class DBLink
     {
-        public static string connetStr = "server=34.92.92.208;port=3306;user=hms;password=WKz65wNzeRKzTFiw; database=hms;";
+        public static string connetStr = "server=34.92.92.208;port=3306;user=kP3LRb;password=dZnzbK67hfzt7Lma; database=Employee;";
         public static MySqlConnection con = new MySqlConnection(connetStr);
 
         //返回MySqlCommand方法

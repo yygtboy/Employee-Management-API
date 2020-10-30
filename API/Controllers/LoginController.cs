@@ -15,12 +15,20 @@ namespace API.Controllers
         [HttpGet]
         public ActionResult<int> Get(string user, string pwd)
         {
-            string sql = $"SELECT COUNT(*) FROM tb_users WHERE phone={user} AND pwd={pwd}";
+            string sql = $"SELECT COUNT(*) FROM WeiXinUsers_Table WHERE UserId='{user}' AND Pwd={pwd}";
             MySqlCommand mySql = DBLink.mySqlLink(sql);
             DBLink.mySqlOpen();
-            int x = int.Parse(mySql.ExecuteScalar().ToString());
-            DBLink.mySqlClose();
-            return x;
+            try
+            {
+                int x = int.Parse(mySql.ExecuteScalar().ToString());
+                DBLink.mySqlClose();
+                return x;
+            }
+            catch {
+                DBLink.mySqlClose();
+                return 101;
+            }
+            
         }
     }
 }

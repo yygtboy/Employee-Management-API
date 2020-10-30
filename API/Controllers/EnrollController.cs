@@ -14,22 +14,32 @@ namespace API.Controllers
     {
         // GET enroll
         [HttpGet]
-        public ActionResult<int> Get(string user, string pwd)
+        public ActionResult<int> Get(int StaffId,string UserId, string pwd)
         {
-            string selectId = $"select count(*) from tb_users where phone ={user}";
-            string sql = $"INSERT INTO tb_users (phone,pwd) VALUES ({user},{pwd})";
-            MySqlCommand mySql = DBLink.mySqlLink(sql);
+            string selectId = $"select count(*) from WeiXinUsers_Table where StaffId ={StaffId}";
+            string sql = $"INSERT INTO tb_users (StaffId,UserId,pwd) VALUES ({StaffId},'{UserId}','{pwd}')";
+            MySqlCommand mySql = DBLink.mySqlLink(selectId);
             DBLink.mySqlOpen();
             try
             {
                 int x = int.Parse(mySql.ExecuteNonQuery().ToString());
+                if (x == 0)
+                {
+                    mySql.CommandText = sql;
+                    x = int.Parse(mySql.ExecuteNonQuery().ToString());
+                    return x;//注册成功
+                }
+                else
+                {
+                    return 201;//用户已经注册过
+                }
                 DBLink.mySqlClose();
                 return x;
             }
             catch
             {
                 DBLink.mySqlClose();
-                return 0;
+                return 101;//数据库建立链接失败
             }
         }
     }
