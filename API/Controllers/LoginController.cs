@@ -15,7 +15,7 @@ namespace API.Controllers
         [HttpGet]
         public ActionResult<int> Get(string user, string pwd)
         {
-            string sql = $"SELECT COUNT(*) FROM WeiXinUsers_Table WHERE UserId='{user}' AND Pwd={pwd}";
+            string sql = $"SELECT COUNT(*) FROM WeiXinUsers_Table WHERE UserId='{user}' AND Pwd='{pwd}'";
             MySqlCommand mySql = DBLink.mySqlLink(sql);
             DBLink.mySqlOpen();
             try
