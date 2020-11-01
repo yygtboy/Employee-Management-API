@@ -54,3 +54,4 @@ D:\GitHub储存桶\Employee-Management-API\API\obj\Release\netcoreapp3.1\linux-x
 D:\GitHub储存桶\Employee-Management-API\API\obj\Release\netcoreapp3.1\linux-x64\API.dll
 D:\GitHub储存桶\Employee-Management-API\API\obj\Release\netcoreapp3.1\linux-x64\API.pdb
 D:\GitHub储存桶\Employee-Management-API\API\obj\Release\netcoreapp3.1\linux-x64\API.genruntimeconfig.cache
+D:\GitHub储存桶\Employee-Management-API\API\bin\Release\netcoreapp3.1\linux-x64\linq2db.dll

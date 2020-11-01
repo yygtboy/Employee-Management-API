@@ -10,7 +10,7 @@
       "NETCOREAPP",
       "NETCOREAPP3_1"
     ],
-    "languageVersion": "8.0",
+    "languageVersion": "",
     "platform": "x64",
     "allowUnsafe": false,
     "warningsAsErrors": false,
@@ -26,6 +26,7 @@
         "dependencies": {
           "MySql.Data": "8.0.15",
           "MySql.Data.EntityFrameworkCore": "8.0.15",
+          "linq2db": "3.1.5",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -1731,6 +1732,14 @@
           "lib/netstandard1.0/Google.Protobuf.dll": {}
         }
       },
+      "linq2db/3.1.5": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/linq2db.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.1.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "2.1.2",
@@ -1740,7 +1749,7 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "Remotion.Linq": "2.2.0",
           "System.Collections.Immutable": "1.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.Diagnostics.DiagnosticSource": "4.5.0",
           "System.Interactive.Async": "3.1.1"
         },
@@ -2118,7 +2127,11 @@
         }
       },
       "System.Collections.Immutable/1.5.0": {},
-      "System.ComponentModel.Annotations/4.5.0": {},
+      "System.ComponentModel.Annotations/4.7.0": {
+        "compile": {
+          "ref/netstandard2.1/System.ComponentModel.Annotations.dll": {}
+        }
+      },
       "System.Configuration.ConfigurationManager/4.4.1": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "4.4.0"
@@ -2748,6 +2761,7 @@
         "dependencies": {
           "MySql.Data": "8.0.15",
           "MySql.Data.EntityFrameworkCore": "8.0.15",
+          "linq2db": "3.1.5",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -3046,6 +3060,17 @@
           }
         }
       },
+      "linq2db/3.1.5": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/linq2db.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.1.5.0"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.1.2": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Abstractions": "2.1.2",
@@ -3055,7 +3080,7 @@
           "Microsoft.Extensions.Logging": "2.1.1",
           "Remotion.Linq": "2.2.0",
           "System.Collections.Immutable": "1.5.0",
-          "System.ComponentModel.Annotations": "4.5.0",
+          "System.ComponentModel.Annotations": "4.7.0",
           "System.Diagnostics.DiagnosticSource": "4.5.0",
           "System.Interactive.Async": "3.1.1"
         },
@@ -3451,7 +3476,7 @@
         }
       },
       "System.Collections.Immutable/1.5.0": {},
-      "System.ComponentModel.Annotations/4.5.0": {},
+      "System.ComponentModel.Annotations/4.7.0": {},
       "System.Configuration.ConfigurationManager/4.4.1": {
         "dependencies": {
           "System.Security.Cryptography.ProtectedData": "4.4.0"
@@ -4103,6 +4128,13 @@
       "path": "google.protobuf/3.5.1",
       "hashPath": "google.protobuf.3.5.1.nupkg.sha512"
     },
+    "linq2db/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sc8nY02b/qTIEO7gWbU5IBiYt1mSXXDwbsda4y2PJTLAd7TeORoGOYXHORC1gp71xK3bWPsMkFpz+TUYdV1GAQ==",
+      "path": "linq2db/3.1.5",
+      "hashPath": "linq2db.3.1.5.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -4579,12 +4611,12 @@
       "path": "system.collections.immutable/1.5.0",
       "hashPath": "system.collections.immutable.1.5.0.nupkg.sha512"
     },
-    "System.ComponentModel.Annotations/4.5.0": {
+    "System.ComponentModel.Annotations/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UxYQ3FGUOtzJ7LfSdnYSFd7+oEv6M8NgUatatIN2HxNtDdlcvFAf+VIq4Of9cDMJEJC0aSRv/x898RYhB4Yppg==",
-      "path": "system.componentmodel.annotations/4.5.0",
-      "hashPath": "system.componentmodel.annotations.4.5.0.nupkg.sha512"
+      "sha512": "sha512-0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+      "path": "system.componentmodel.annotations/4.7.0",
+      "hashPath": "system.componentmodel.annotations.4.7.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/4.4.1": {
       "type": "package",
