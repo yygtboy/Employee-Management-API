@@ -26,7 +26,7 @@ namespace API.Controllers
             }
             catch {
                 DBLink.mySqlClose();
-                return 101;
+                return 101;//数据库建立链接失败
             }
             
         }
