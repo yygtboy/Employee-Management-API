@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace API.Models
+﻿namespace API.Models
 {
-    public static class Employee
+    public class Employees
     {
-        public static int StaffId;
-        public static int Name;
-        public static int Sex;
-        public static int Phone;
-        public static int IdCard;
-        public static int Post;
+        public int staffId { get; set; }
+
+        public string name { get; set; }
+
+        public int sex { get; set; }
+
+        public string phone { get; set; }
+
+        public string idCard { get; set; }
+
+        public int position { get; set; }
+
     }
 }

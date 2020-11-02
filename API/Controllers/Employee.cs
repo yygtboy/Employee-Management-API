@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
 using System.Data.SqlClient;
 using System.Data;
+using API.Models;
 
 namespace API.Controllers
 {
@@ -16,21 +17,31 @@ namespace API.Controllers
     {
         
         //获取所有员工信息
-        [HttpGet]
-        public ActionResult<Employee> Get()
+        [HttpPost]
+        public Employees Post()
         {
            
-            string sql = "SELECT * FROM Employee_Table";
-            MySqlCommand mySql = new MySqlCommand(sql);
+            //string sql = "SELECT * FROM Employee_Table";
+            //MySqlCommand mySql = new MySqlCommand(sql);
 
-            MySqlDataReader reader = null;
-            DBLink.mySqlOpen();
+            //MySqlDataReader reader = null;
+            //DBLink.mySqlOpen();
+                
+            //reader = mySql.ExecuteReader();
+            //DBLink.mySqlClose();
 
-            reader = mySql.ExecuteReader();
+            Employees employees = new Employees ();
 
-            Employee employee = new Employee();
-            DBLink.mySqlClose();
-            return employee;
+            employees.staffId = 001;
+            employees.name = "AA";
+            employees.sex = 1;
+            employees.phone = "123123123";
+            employees.idCard = "1651313";
+            employees.position = 101;
+
+
+            
+            return employees;
 
         }
     }
