@@ -13,7 +13,7 @@ namespace API
         public static MySqlConnection con = new MySqlConnection(connetStr);
 
         //返回MySqlCommand方法
-        public static MySqlCommand mySqlLink(string sql)
+        public static MySqlCommand MySqlLink(string sql)
         {
             MySqlCommand mySql = new MySqlCommand(sql, con);
             return mySql;

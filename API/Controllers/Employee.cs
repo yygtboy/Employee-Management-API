@@ -17,32 +17,65 @@ namespace API.Controllers
     {
         
         //获取所有员工信息
-        [HttpPost]
-        public Employees Post()
+        [HttpGet]
+        public object Get()
         {
-           
-            //string sql = "SELECT * FROM Employee_Table";
-            //MySqlCommand mySql = new MySqlCommand(sql);
+            //打开数据库连接
+            DBLink.mySqlOpen();
 
-            //MySqlDataReader reader = null;
-            //DBLink.mySqlOpen();
-                
-            //reader = mySql.ExecuteReader();
-            //DBLink.mySqlClose();
+            string sql = "SELECT * FROM Employee_Table";
+            MySqlCommand cmd =  DBLink.MySqlLink(sql);
 
-            Employees employees = new Employees ();
+            //创建Employees类集合
+            List< Employees > employees = new List<Employees>();
+            MySqlDataReader reader = cmd.ExecuteReader();
 
-            employees.staffId = 001;
-            employees.name = "AA";
-            employees.sex = 1;
-            employees.phone = "123123123";
-            employees.idCard = "1651313";
-            employees.position = 101;
-
-
-            
+            //将数据库的数据存放到集合中
+            while (reader.Read())
+            {
+                employees.Add(new Employees()
+                {
+                    staffId = (int)reader["StaffId"],
+                    name = (string)reader["Name"],
+                    sex = (int)reader["Sex"],
+                    phone = (string)reader["Phone"],
+                    idCard = (string)reader["IdCard"],
+                    position = (int)reader["Position"]
+                });
+            }
+            DBLink.mySqlClose();
             return employees;
+        }
 
+        //获取单个员工信息
+        [HttpGet("{id}")]
+        public object Get(int id)
+        {
+            //打开数据库连接
+            DBLink.mySqlOpen();
+
+            string sql = $"SELECT * FROM Employee_Table WHERE StaffId={id}";
+            MySqlCommand cmd = DBLink.MySqlLink(sql);
+
+            //创建Employees类集合
+            List<Employees> employees = new List<Employees>();
+            MySqlDataReader reader = cmd.ExecuteReader();
+
+            //将数据库的数据存放到集合中
+            while (reader.Read())
+            {
+                employees.Add(new Employees()
+                {
+                    staffId = (int)reader["StaffId"],
+                    name = (string)reader["Name"],
+                    sex = (int)reader["Sex"],
+                    phone = (string)reader["Phone"],
+                    idCard = (string)reader["IdCard"],
+                    position = (int)reader["Position"]
+                });
+            }
+            DBLink.mySqlClose();
+            return employees;
         }
     }
 }
