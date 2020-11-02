@@ -18,7 +18,7 @@ namespace API.Controllers
         {
             string selectId = $"select count(*) from WeiXinUsers_Table where StaffId ={StaffId}";
             string sql = $"INSERT INTO tb_users (StaffId,UserId,pwd) VALUES ({StaffId},'{UserId}','{pwd}')";
-            MySqlCommand mySql = DBLink.mySqlLink(selectId);
+            MySqlCommand mySql = DBLink.MySqlLink(selectId);
             DBLink.mySqlOpen();
             try
             {
