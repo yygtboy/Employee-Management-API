@@ -12,7 +12,9 @@
 
         public string idCard { get; set; }
 
-        public int position { get; set; }
+        public string sector { get; set; }
+
+        public string position { get; set; }
 
     }
 }
