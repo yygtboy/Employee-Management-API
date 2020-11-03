@@ -17,13 +17,13 @@ namespace API.Controllers
         public ActionResult<int> Get(int StaffId,string UserId, string pwd)
         {
             string selectId = $"select count(*) from WeiXinUsers_Table where StaffId ={StaffId} OR UserId='{UserId}'";
-            string sql = $"INSERT INTO tb_users (StaffId,UserId,pwd) VALUES ({StaffId},'{UserId}','{pwd}')";
+            string sql = $"INSERT INTO WeiXinUsers_Table (StaffId,UserId,pwd) VALUES ({StaffId},'{UserId}','{pwd}')";
             MySqlCommand mySql = DBLink.MySqlLink(selectId);
             DBLink.mySqlOpen();
             try
             {
                 //判断用户是否注册过
-                int x = int.Parse(mySql.ExecuteNonQuery().ToString());
+                int x = int.Parse(mySql.ExecuteScalar().ToString());
                 if (x == 0)
                 {
                     //添加用户
