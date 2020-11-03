@@ -16,7 +16,7 @@ namespace API.Controllers
         [HttpGet]
         public ActionResult<int> Get(int StaffId,string UserId, string pwd)
         {
-            string selectId = $"select count(*) from WeiXinUsers_Table where StaffId ={StaffId}";
+            string selectId = $"select count(*) from WeiXinUsers_Table where StaffId ={StaffId} OR UserId='{UserId}'";
             string sql = $"INSERT INTO tb_users (StaffId,UserId,pwd) VALUES ({StaffId},'{UserId}','{pwd}')";
             MySqlCommand mySql = DBLink.MySqlLink(selectId);
             DBLink.mySqlOpen();
@@ -35,14 +35,14 @@ namespace API.Controllers
                 else
                 {
                     DBLink.mySqlClose();
-                    return 201;//用户已经注册过
+                    return 2010;//用户已经注册过
 
                 }
             }
             catch
             {
                 DBLink.mySqlClose();
-                return 101;//数据库建立链接失败
+                return 1010;//数据库建立链接失败
             }
         }
     }
