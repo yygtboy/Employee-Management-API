@@ -13,9 +13,9 @@ namespace API.Controllers
     {
         // GET login
         [HttpGet]
-        public ActionResult<int> Get(string user, string pwd)
+        public ActionResult<int> Get(string UserId, string pwd)
         {
-            string sql = $"SELECT COUNT(*) FROM WeiXinUsers_Table WHERE UserId='{user}' AND Pwd='{pwd}'";
+            string sql = $"SELECT COUNT(*) FROM WeiXinUsers_Table WHERE UserId='{UserId}' AND Pwd='{pwd}'";
             MySqlCommand mySql = DBLink.MySqlLink(sql);
             DBLink.mySqlOpen();
             try
